@@ -1,0 +1,4 @@
+#!/bin/sh
+# ./bcurl -v localhost:9000/index.html
+dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec python3 "$dir/bcurl.py" "$@"

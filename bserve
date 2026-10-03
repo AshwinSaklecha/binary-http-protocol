@@ -1,0 +1,4 @@
+#!/bin/sh
+# ./bserve ./www 9000
+dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec python3 "$dir/bserve.py" "$@"
